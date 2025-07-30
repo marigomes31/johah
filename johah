@@ -1,0 +1,24 @@
+def responder(mensagem):
+    mensagem = mensagem.lower()
+
+    if "oi" in mensagem or "olá" in mensagem:
+        return "Olá! Como posso ajudar você hoje?"
+    elif "tudo bem" in mensagem:
+        return "Estou bem, obrigado por perguntar. E você?"
+    elif "adeus" in mensagem or "tchau" in mensagem:
+        return "Tchau! Volte sempre!"
+    else:
+        return "Desculpe, não entendi. Pode reformular?"
+
+def iniciar_chat():
+    print("ChatBot: Olá! Digite 'sair' para encerrar.")
+    while True:
+        usuario = input("Você: ")
+        if usuario.lower() == "sair":
+            print("ChatBot: Até logo!")
+            break
+        resposta = responder(usuario)
+        print(f"ChatBot: {resposta}")
+
+if __name__ == "__main__":
+    iniciar_chat()
