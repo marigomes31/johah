@@ -11,14 +11,14 @@ def responder(mensagem):
         return "Desculpe, não entendi. Pode reformular?"
 
 def iniciar_chat():
-    print("johah: Olá! Digite 'sair' para encerrar.")
+    print("johan: Olá! Digite 'sair' para encerrar.")
     while True:
         usuario = input("Você: ")
         if usuario.lower() == "sair":
-            print("johah: Até logo!")
+            print("johan: Até logo!")
             break
         resposta = responder(usuario)
-        print(f"johah: {resposta}")
+        print(f"johan: {resposta}")
 
 if __name__ == "__main__":
     iniciar_chat()
