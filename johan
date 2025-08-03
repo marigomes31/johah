@@ -1,24 +1,32 @@
-def responder(mensagem):
-    mensagem = mensagem.lower()
 
-    if "oi" in mensagem or "olá" in mensagem:
-        return "Olá?"
-    elif "tudo bem" in mensagem:
-        return "Estou bem, obrigado por perguntar. E você?"
-    elif "adeus" in mensagem or "tchau" in mensagem:
-        return "Tchau! Volte sempre!"
-    else:
-        return "Desculpe, não entendi. Pode reformular?"
+body {
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  padding: 20px;
+  text-aling: center;
+}
 
-def iniciar_chat():
-    print("johan: Olá! Digite 'sair' para encerrar.")
-    while True:
-        usuario = input("Você: ")
-        if usuario.lower() == "sair":
-            print("johan: Até logo!")
-            break
-        resposta = responder(usuario)
-        print(f"johan: {resposta}")
-
-if __name__ == "__main__":
-    iniciar_chat()
+.video-box {
+  background: #a62121;
+  padding: 10px;
+  border-radius: 6px;
+  max-width: 560px;
+  margin: auto;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+video{
+  width: 100%;
+  border-radius: 4px;
+}
+.info {
+  margin-top: 8px;
+}
+.info h3 {
+  font-size: 16px;
+  margin: 4px 0;
+  color: #002f6c;
+}
+.info p {
+  font-size: 13px;
+color: #e0dfdf;
+}
